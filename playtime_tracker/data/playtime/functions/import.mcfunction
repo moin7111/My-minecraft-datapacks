@@ -19,5 +19,8 @@ scoreboard players operation @s pt_min /= #minute pt_const
 scoreboard players operation @s pt_tick = @s pt_calc
 scoreboard players operation @s pt_tick %= #minute pt_const
 
+# Gesamtstunden für die Sidebar berechnen
+function playtime:update_total_hours
+
 # Spieler muss nicht erneut importiert werden
 scoreboard players set @s pt_import 1
