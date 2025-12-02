@@ -4,7 +4,7 @@ This guide explains how to install and use the two datapacks **Creative Dimensio
 
 ## 📋 Requirements
 
-- Minecraft Java Edition (Version 1.21.4 or higher, uses `pack_format` 48)
+- Minecraft Java Edition (Version 1.21.5 or higher, uses `pack_format` 88)
 - A Minecraft world (Singleplayer or Multiplayer with admin rights)
 
 ## 🚀 Installation
@@ -149,6 +149,6 @@ The datapack creates the following scoreboards:
 
 - The Creative dimension is a flat world (Superflat)
 - All player data is stored in scoreboards and persists across restarts
-- The datapacks are optimized for Minecraft version 1.21.4+
+- The datapacks are optimized for Minecraft version 1.21.5+ (pack_format 88)
 
 Enjoy the datapacks! 🎉
