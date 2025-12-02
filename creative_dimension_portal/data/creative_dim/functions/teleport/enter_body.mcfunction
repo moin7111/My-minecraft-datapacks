@@ -19,4 +19,4 @@ data modify entity @e[type=minecraft:marker,tag=creative_dim.return_marker,sort=
 
 gamemode creative @s
 execute in creative_dim:creative_flat run tp @s 0.5 80.0 0.5
-tellraw @s {"text":"Du befindest dich nun in der flachen Kreativ-Dimension. Nutze /trigger creative_dim_exit um zurückzukehren.","color":"green"}
+tellraw @s {"text":"Du befindest dich nun in der flachen Kreativ-Dimension. Nutze /trigger creative_exit um zurückzukehren.","color":"green"}
