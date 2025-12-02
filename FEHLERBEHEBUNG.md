@@ -36,7 +36,7 @@ Teste, ob es funktioniert:
 
 ```minecraft
 # Zeige die Spielzeit an
-/scoreboard objectives setdisplay sidebar pt_total_hours
+/scoreboard objectives setdisplay sidebar pt_total_minutes
 
 # Oder zeige Tage an
 /scoreboard objectives setdisplay sidebar pt_day
@@ -51,6 +51,7 @@ Du solltest jetzt folgende Scoreboards sehen:
 - ✅ `pt_hr` - Stunden (0-23)
 - ✅ `pt_day` - Tage
 - ✅ `pt_total_hours` - Gesamtstunden
+- ✅ `pt_total_minutes` - Gesamtminuten (Sidebar)
 - ✅ `pt_const` - Konstanten
 - ✅ `pt_import` - Import-Status
 - ✅ `pt_stat` - Vanilla Spielzeit
@@ -82,8 +83,8 @@ Du musst nichts weiter tun! 🎉
 ## Weitere Anzeige-Optionen
 
 ```minecraft
-# Gesamtstunden anzeigen (Standard)
-/scoreboard objectives setdisplay sidebar pt_total_hours
+# Gesamtminuten anzeigen (Standard)
+/scoreboard objectives setdisplay sidebar pt_total_minutes
 
 # Tage anzeigen
 /scoreboard objectives setdisplay sidebar pt_day

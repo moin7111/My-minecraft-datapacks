@@ -29,7 +29,10 @@
 
 ### Anzeigebefehle
 ```bash
-# Tage anzeigen (Sidebar)
+# Standard (Gesamtminuten)
+/scoreboard objectives setdisplay sidebar pt_total_minutes
+
+# Tage anzeigen
 /scoreboard objectives setdisplay sidebar pt_day
 
 # Stunden anzeigen
@@ -44,6 +47,8 @@
 
 ### Spieler abfragen
 ```bash
+/scoreboard players get <Spielername> pt_total_minutes
+/scoreboard players get <Spielername> pt_total_hours
 /scoreboard players get <Spielername> pt_day
 /scoreboard players get <Spielername> pt_hr
 /scoreboard players get <Spielername> pt_min
@@ -53,10 +58,16 @@
 
 | Scoreboard | Beschreibung | Wertebereich |
 |------------|--------------|--------------|
+| `pt_total_minutes` | Gesamtspielzeit in Minuten | 0+ |
+| `pt_total_hours` | Gesamtspielzeit in vollen Stunden | 0+ |
 | `pt_day` | Gespielte Tage | 0+ |
 | `pt_hr` | Stunden (Rest) | 0-23 |
 | `pt_min` | Minuten (Rest) | 0-59 |
 | `pt_tick` | Interne Ticks | 0-1199 |
+| `pt_const` | Konstanten (Ticks pro Zeit) | – |
+| `pt_import` | Importstatus pro Spieler | 0/1 |
+| `pt_stat` | Vanilla-Spielzeit (Ticks) | 0+ |
+| `pt_calc` | Temporäre Berechnungen | – |
 
 ## Fehlerbehebung Express
 
