@@ -11,6 +11,8 @@
     "foliage_color": 8173507,
     "music": {
       "sound": "minecraft:music.overworld.meadow",
+      "min_delay": 12000,
+      "max_delay": 24000,
       "replace_current_music": false
     }
   },
@@ -20,9 +22,14 @@
     "ambient": [],
     "water_creature": [],
     "water_ambient": [],
-    "misc": []
+    "underground_water_creature": [],
+    "misc": [],
+    "axolotls": []
   },
   "spawn_costs": {},
-  "carvers": {},
-  "features": []
+  "carvers": {
+    "air": [],
+    "liquid": []
+  },
+  "features": [[], [], [], [], [], [], [], [], [], [], []]
 }

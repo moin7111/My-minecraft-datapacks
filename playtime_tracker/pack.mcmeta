@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 48,
+    "pack_format": 88,
+    "supported_formats": {"min_inclusive": 48, "max_inclusive": 88},
     "description": "Spielzeit-Tracker (Tage, Stunden, Minuten)"
   }
 }
