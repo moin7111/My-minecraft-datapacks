@@ -101,7 +101,7 @@
 
 ## Systemvoraussetzungen
 
-- ✅ Minecraft Java Edition 1.21.4+
+- ✅ Minecraft Java Edition 1.22+ (pack_format 82.0)
 - ✅ Operator-Rechte (für Installation)
 - ✅ Trigger-Befehle müssen erlaubt sein
 

@@ -4,7 +4,7 @@ Diese Anleitung erklärt, wie du die beiden Datapacks **Creative Dimension Porta
 
 ## 📋 Voraussetzungen
 
-- Minecraft Java Edition (Version 1.21.4 oder höher, da `pack_format` 48 verwendet wird)
+- Minecraft Java Edition (Version 1.22 bzw. Snapshot 25w31a oder neuer, nutzt `pack_format` 82.0)
 - Eine Minecraft-Welt (Singleplayer oder Multiplayer mit Admin-Rechten)
 
 ## 🚀 Installation
@@ -147,6 +147,6 @@ Das Datapack erstellt folgende Scoreboards:
 
 - Die Creative-Dimension ist eine Flachland-Welt (Superflat)
 - Alle Spieler-Daten werden in Scoreboards gespeichert und bleiben beim Neustart erhalten
-- Die Datapacks sind für Minecraft Version 1.21.4+ optimiert
+- Die Datapacks sind für Minecraft Version 1.22+ (pack_format 82.0) optimiert
 
 Viel Spaß mit den Datapacks! 🎉
