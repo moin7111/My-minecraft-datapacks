@@ -79,21 +79,25 @@ This datapack tracks each player's playtime in days, hours, and minutes.
 
 ### Usage
 
-**Display playtime:**
+**Default sidebar:**
 
-For your own playtime:
+The datapack automatically shows the total playtime in minutes (objective `pt_total_minutes`).  
+If you removed it, restore it with:
 ```
-/scoreboard objectives setdisplay sidebar pt_day
+/scoreboard objectives setdisplay sidebar pt_total_minutes
 ```
 
-Or for more detailed views:
+**Alternative views:**
 ```
-/scoreboard objectives setdisplay sidebar pt_hr
-/scoreboard objectives setdisplay sidebar pt_min
+/scoreboard objectives setdisplay sidebar pt_day   # Total days
+/scoreboard objectives setdisplay sidebar pt_hr    # Current hour (0-23)
+/scoreboard objectives setdisplay sidebar pt_min   # Current minute (0-59)
 ```
 
 **Query a player's playtime:**
 ```
+/scoreboard players get <PlayerName> pt_total_minutes
+/scoreboard players get <PlayerName> pt_total_hours
 /scoreboard players get <PlayerName> pt_day
 /scoreboard players get <PlayerName> pt_hr
 /scoreboard players get <PlayerName> pt_min
@@ -102,10 +106,16 @@ Or for more detailed views:
 ### Scoreboards
 
 The datapack creates the following scoreboards:
+- `pt_total_minutes` - Total playtime in minutes (auto sidebar)
+- `pt_total_hours` - Total playtime in full hours
 - `pt_day` - Playtime in days
 - `pt_hr` - Playtime in hours (0-23)
 - `pt_min` - Playtime in minutes (0-59)
 - `pt_tick` - Internal tick counter
+- `pt_const` - Helper constants (ticks/min/hour/day)
+- `pt_import` - Import flag per player
+- `pt_stat` - Vanilla `play_time` stat mirror
+- `pt_calc` - Temp scoreboard for conversions
 
 ## 🔧 Troubleshooting
 
@@ -124,7 +134,7 @@ The datapack creates the following scoreboards:
 ### Playtime Tracker shows no values
 
 1. Playtime starts at 0 when the datapack is newly installed
-2. Play for a few minutes, then values should appear
+2. Play for at least 1 minute so the sidebar can refresh
 3. Use `/scoreboard players list @s` to see your current scores
 
 ## 🎮 Quick Start (TL;DR)
@@ -133,7 +143,7 @@ The datapack creates the following scoreboards:
 2. Start Minecraft and load the world
 3. Run `/reload`
 4. Test the Creative dimension with `/trigger creative_enter`
-5. Show your playtime with `/scoreboard objectives setdisplay sidebar pt_day`
+5. Show your playtime with `/scoreboard objectives setdisplay sidebar pt_total_minutes`
 
 ## 📝 Notes
 

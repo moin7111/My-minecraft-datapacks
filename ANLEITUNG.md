@@ -79,21 +79,23 @@ Dieses Datapack trackt die Spielzeit jedes Spielers in Tagen, Stunden und Minute
 
 ### Verwendung
 
-**Spielzeit anzeigen:**
+**Standard-Anzeige (Gesamtminuten):**
+```
+/scoreboard objectives setdisplay sidebar pt_total_minutes
+```
+Die Sidebar zeigt damit deine Gesamtspielzeit und aktualisiert sich jede Minute automatisch.
 
-Für deine eigene Spielzeit:
+**Alternative Ansichten:**
 ```
 /scoreboard objectives setdisplay sidebar pt_day
-```
-
-Oder für detailliertere Ansichten:
-```
 /scoreboard objectives setdisplay sidebar pt_hr
 /scoreboard objectives setdisplay sidebar pt_min
 ```
 
 **Spielzeit eines Spielers abfragen:**
 ```
+/scoreboard players get <Spielername> pt_total_minutes
+/scoreboard players get <Spielername> pt_total_hours
 /scoreboard players get <Spielername> pt_day
 /scoreboard players get <Spielername> pt_hr
 /scoreboard players get <Spielername> pt_min
@@ -102,10 +104,16 @@ Oder für detailliertere Ansichten:
 ### Scoreboards
 
 Das Datapack erstellt folgende Scoreboards:
+- `pt_total_minutes` - Gesamtspielzeit in Minuten (Sidebar)
+- `pt_total_hours` - Gesamtspielzeit in vollen Stunden
 - `pt_day` - Spielzeit in Tagen
 - `pt_hr` - Spielzeit in Stunden (0-23)
 - `pt_min` - Spielzeit in Minuten (0-59)
 - `pt_tick` - Interne Tick-Zählung
+- `pt_const` - Konstanten (Ticks pro Minute/Stunde/Tag)
+- `pt_import` - Import-Status pro Spieler
+- `pt_stat` - Vanilla-Spielzeit (play_time)
+- `pt_calc` - temporäre Berechnungshilfe
 
 ## 🔧 Fehlerbehebung
 
@@ -124,7 +132,7 @@ Das Datapack erstellt folgende Scoreboards:
 ### Playtime Tracker zeigt keine Werte
 
 1. Die Spielzeit beginnt bei 0, wenn das Datapack neu installiert wird
-2. Spiele ein paar Minuten, dann sollten Werte erscheinen
+2. Spiele mindestens 1 Minute, dann aktualisiert sich die Anzeige
 3. Verwende `/scoreboard players list @s` um deine aktuellen Scores zu sehen
 
 ## 🎮 Schnellstart (TL;DR)
@@ -133,7 +141,7 @@ Das Datapack erstellt folgende Scoreboards:
 2. Starte Minecraft und lade die Welt
 3. Führe `/reload` aus
 4. Teste die Creative-Dimension mit `/trigger creative_enter`
-5. Zeige deine Spielzeit mit `/scoreboard objectives setdisplay sidebar pt_day`
+5. Zeige deine Spielzeit mit `/scoreboard objectives setdisplay sidebar pt_total_minutes`
 
 ## 📝 Hinweise
 

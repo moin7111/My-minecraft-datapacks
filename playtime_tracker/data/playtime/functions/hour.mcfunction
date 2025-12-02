@@ -7,6 +7,3 @@ execute if score @s pt_min matches 60.. run function playtime:hour
 
 # Tageberechnung anstoßen
 execute if score @s pt_hr matches 24.. run function playtime:day
-
-# Gesamtstunden aktualisieren
-function playtime:update_total_hours
